@@ -1,5 +1,4 @@
 $nl = [System.Environment]::NewLine
-# Split our input by new line. Each passport now has its own position array
 $answers = ((Get-Content '.\2020\day6\input.txt' | Out-String) -split "$nl$nl")
 $final = 0
 foreach ($group in $answers){
